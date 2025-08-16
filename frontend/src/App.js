@@ -1,21 +1,23 @@
-import React, { useState, useEffect } from "react";
-import PetList from "./components/PetList";
-import AddPetForm from "./components/AddPetForm";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-  const [pets, setPets] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:5000/api/pets")
-      .then((res) => res.json())
-      .then((data) => setPets(data));
-  }, []);
-
   return (
-    <div className="container">
-      <h1>🐾 Pet Adoption Platform</h1>
-      <AddPetForm setPets={setPets} />
-      <PetList pets={pets} setPets={setPets} />
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
