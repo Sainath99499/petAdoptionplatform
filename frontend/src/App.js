@@ -1,9 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/home';
 import Login from './pages/login';
 import Register from './pages/Register';
+import AdoptForm from './pages/AdoptForm';
+import './App.css';
 
 const App = () => {
   return (
@@ -13,11 +15,13 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/adopt" element={<AdoptForm />} />
       </Routes>
     </Router>
   );
 };
 
 export default App;
+
 
 
