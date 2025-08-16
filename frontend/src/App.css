@@ -1,45 +1,84 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  background-color: #f9f9f9;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.main-container {
+  padding: 20px;
 }
 
 .navbar {
   background-color: #333;
   color: white;
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar a {
   color: white;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
 }
 
 .page {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: white;
   padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
   gap: 1rem;
+}
+
+.form input,
+.form textarea,
+.form select {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.form button:hover {
+  background-color: #218838;
 }
 
 .pet-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
 .pet-card {
-  padding: 1rem;
+  background-color: #fff;
   border: 1px solid #ddd;
-  background: white;
-  width: 200px;
+  padding: 1rem;
   border-radius: 6px;
+  width: 200px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
-
